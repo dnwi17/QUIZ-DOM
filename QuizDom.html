@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Hero MLBB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #FFD1B0;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #FF829A;
+        }
+        .event-output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #E27DA1;
+            background-color: #846C98; 
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="color: rgb(127, 32, 127);">List Hero MLBB</h1> 
+<table id="hero-table">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Hero Name</th>
+            <th>Role</th>
+            <th>Skill</th>
+            <th>Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Layla</td>
+            <td>Marksman</td>
+            <td>Reap/Damage</td>
+            <td><a href="Layla.jpeg">Layla</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Aldous</td>
+            <td>Fighter</td>
+            <td>Burst/Support</td>
+            <td><a href="aldous.jpeg">Aldous</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Gusion</td>
+            <td>Assassin</td>
+            <td>Burst/Magic Damage</td>
+            <td><a href="gusion.jpeg">Gusion</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Franco</td>
+            <td>Tank</td>
+            <td>Initiator/Control</td>
+            <td><a href="franco.jpeg">Franco</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Lylia</td>
+            <td>Mage</td>
+            <td>Push/Damage</td>
+            <td><a href="lylia.jpeg">Lylia</a></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Nana</td>
+            <td>Mage</td>
+            <td>Poke/Burst</td>
+            <td><a href="nana.jpeg">Nana</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="event-output" id="output"></div>
+
+<h2 style="color: rgb(103, 24, 108);">Add New Hero</h2> 
+
+<form id="hero-form">
+    <label for="hero-name">Hero Name:</label><br/>
+    <input type="text" id="hero-name" required><br/><br/>
+    <label for="hero-role">Role:</label><br/>
+    <input type="text" id="hero-role" required><br/><br/>
+    <label for="hero-role">Skill:</label><br/>
+    <input type="text" id="hero-skill" required><br/><br/>
+    <input type="submit" value="Add Hero">
+</form>
+
+<script src="QuizDom.js"></script> 
+
+</body>
+</html>
